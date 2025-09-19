@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar CSS Dasar</title>
+        <style>
+            /*   INI KOMENTAR, SAMA MENGGUNAKAN  " CTRL + / "   */
+            /* ID di tandai dengan tanda #[nama_id]*/
+            #box1 {
+                background-color: rgb(0, 0, 0);
+                width: 500px;
+                padding: 30px;
+            }
+            #title {
+                color: rgb(149, 0, 255);
+            }
+            #hr1 {
+               color: rgb(252, 252, 252); 
+            }
+            #box2 {
+                background-color: tomato;
+                width: 200px;
+                padding: 20px;
+                margin: 30px;
+            }
+            /* bisa mentargetkan selector turunannya asal di dalam suatu tag */
+            #box2 h1 {
+                color: blueviolet;
+                text-align: center;
+            }
+            #box2 a {
+                color: greenyellow;
+                font-weight: bold;
+            }
+            /* CLASS di tandai dengan tanda .(titik) */
+            .deskripsi {
+                font-size: 16px;
+                color: rgb(0, 196, 10);
+            }
+            .deskripsi b {                /* Ini mengubah kata "Error" di p -> lorem*/                 
+                font-size: 20px;
+            }
+
+            p {
+                /* font-family: Ganti Jenis Font */
+                font-family: 'Arial';
+            }
+            h1 {
+                font-family: 'Cour';
+            }
+        </style>
+    </head>
+    <body>
+        <!-- DI BAWAH INI ADALAH BOX-1 ATAU DIV-1 -->
+        <div id="box1">
+        <h1 id="title">Belajar Attribute</h1><hr id="hr1">
+        <p class="deskripsi"> 
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         <b>Error</b> beatae voluptas doloremque deserunt autem, quidem nesciunt quibusdam, laboriosam 
+         fugiat eligendi illo sit veniam repellat dolore similique odio laudantium nam nulla.
+        </p>
+        </div>
+        <br />
+        
+        <!-- DI BAWAH INI ADALAH BOX-2 ATAU DIV-2 -->
+        <div id="box2">
+         <h1>Kotak Baru</h1>
+         <p>ini div bawah</p>
+         <a href="https://google.com" target="_blank">Klik Google Ke Tab Baru</a>
+         <h3>Tipe-tipe List</h3>
+         <!-- atribut type: a, A, i, I -->
+         <ol type="I">
+             <li>Tomat</li>
+             <li>Brokoli</li>
+             <li>Bawang Merah</li>
+             <li>Bawang Putih</li>
+         </ol>
+         
+         <!-- ul>li*3 (buat <ul> dengan 3 <li> item) -->
+         <!-- atribut type: circle, square, none -->
+         <ul type="square">
+             <li>Purworejo</li>
+             <li>Yogyakarta</li>
+             <li>Solo</li>
+         </ul>
+        </div>
+    </body>
+</html>
